@@ -17,5 +17,12 @@ export const actions = {
             .then(() => auth.currentUser.getIdToken())
             .then(token => Cookie.set('access_token', token))
             .then(() => commit('SET_USER', {email: auth.currentUser.email, uid: auth.currentUser.uid}))
+    },
+    logout({commit}) {
+        return auth.signOut()
+            .then(() => {
+                commit('SET_USER', null);
+                Cookie.set('access_token', '0');
+            });
     }
 };
