@@ -22,7 +22,7 @@ export const actions = {
         return auth.signOut()
             .then(() => {
                 commit('SET_USER', null);
-                Cookie.set('access_token', '0');
+                Cookie.rermove('access_token');
             });
     }
 };
