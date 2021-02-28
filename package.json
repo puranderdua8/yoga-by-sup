@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-fire-auth",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cookieparser": "^0.1.0",
+    "core-js": "^3.8.3",
+    "firebase": "^8.2.9",
+    "js-cookie": "^2.2.1",
+    "jwt-decode": "^3.1.2",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.4.2"
+  }
+}
