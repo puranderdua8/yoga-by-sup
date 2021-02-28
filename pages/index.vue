@@ -21,8 +21,10 @@
         methods: {
             handleLogin() {
                 // TODO: Add validations
-                console.log(this.email, this.password);
-                this.$router.push('/admin');
+                const {email, password} = this;
+                this.$store.dispatch('user/login', {email, password})
+                    .then(() => this.$router.push('/admin'))
+                    .catch(e => console.log(e));
             }
         }
     }
