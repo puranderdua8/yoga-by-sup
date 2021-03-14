@@ -8,6 +8,7 @@
 <script>
     export default {
         name: 'index',
+        middleware: 'auth',
         methods: {
             handleLogout() {
                 this.$store.dispatch('user/logout').then(() => this.$router.push('/'))
@@ -15,7 +16,3 @@
         }
     }
 </script>
-
-<style scoped>
-
-</style>
