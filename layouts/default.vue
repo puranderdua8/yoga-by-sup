@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col w-full">
         <navbar/>
-        <main class="flex-1 pt-4">
+        <main class="flex-1">
             <Nuxt/>
         </main>
         <app-footer/>

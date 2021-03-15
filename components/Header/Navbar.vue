@@ -1,5 +1,5 @@
 <template>
-    <header class="fixed top-0 left-0 w-full bg-transparent z-10 px-2 md:px-4" :class="{'bg-white': isScrolled}">
+    <header class="fixed top-0 left-0 w-full bg-transparent z-30 px-2 md:px-4" :class="{'bg-white': isScrolled}">
         <div class="flex justify-between items-center md:container md:mx-auto">
             <div class="flex items-center space-x-4">
                 <button class="md:hidden z-40 transform" aria-label="Nav Menu"
@@ -18,7 +18,7 @@
                     <div class="text-2xl whitespace-nowrap">Yoga By Sup</div>
                 </nuxt-link>
             </div>
-            <aside class="md:hidden fixed top-0 left-0 w-screen h-screen overflow-x-hidden overflow-y-auto flex flex-col justify-center bg-white transform transition-transform duration-300 ease-in-out z-30"
+            <aside class="md:hidden fixed top-0 left-0 w-screen h-screen overflow-x-hidden overflow-y-auto flex flex-col justify-center bg-white transform transition-transform duration-300 ease-in-out"
                    :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
                 <logo classes="w-16 block mx-auto mb-16"/>
                 <nav-links :links="routes"
