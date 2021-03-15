@@ -46,14 +46,14 @@
         },
         mixins: [routesMixin],
         mounted() {
-            window && window.addEventListener('scroll', this.toggleNavBg)
+            window && window.addEventListener('scroll', this.toggleNavBg);
         },
         data() {
             return {
                 isMobile: process.browser && window.innerWidth < 768 || false,
                 isOpen: false,
                 isScrolled: false
-            }
+            };
         },
         methods: {
             toggleMenu() {
