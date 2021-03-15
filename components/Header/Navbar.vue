@@ -22,7 +22,8 @@
                    :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
                 <logo classes="w-16 block mx-auto mb-16"/>
                 <nav-links :links="routes"
-                           list-classes="flex flex-col flex-auto justify-center items-center space-y-8"/>
+                           list-classes="flex flex-col flex-auto justify-center items-center space-y-8"
+                           @link-clicked="isOpen = !isOpen"/>
             </aside>
             <nav-links :links="routes"
                        list-item-classes="px-4"
