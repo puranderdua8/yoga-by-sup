@@ -25,14 +25,16 @@ export default {
     components: true,
 
     // Router settings
-    router: {
-        middleware: 'auth'
-    },
+    router: {},
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
+
         // https://go.nuxtjs.dev/tailwindcss
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
+
+        // https://image.nuxtjs.org/setup
+        '@nuxt/image'
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
